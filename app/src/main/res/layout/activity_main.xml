@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/lunchImage"
+        android:layout_width="191dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="72dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dd_logo"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/decideBtn"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:text="Decide!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchImage"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <EditText
+        android:id="@+id/addNewFoodTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="add new food..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchImage" />
+
+    <Button
+        android:id="@+id/addNewFoodBtn"
+        android:layout_width="149dp"
+        android:layout_height="43dp"
+        android:text="add food"
+        app:layout_constraintBottom_toTopOf="@+id/decideBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNewFoodTxt"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <TextView
+        android:id="@+id/foodTxt"
+        android:layout_width="307dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/addNewFoodTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchImage"
+        app:layout_constraintVertical_bias="0.304"
+        tools:text="Chinese" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
